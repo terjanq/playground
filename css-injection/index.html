@@ -7,7 +7,7 @@
                 style-src 'unsafe-inline'; font-src data:">
         <script>
             onload = onhashchange = _ =>{
-                // document.querySelectorAll('style').forEach(e=>e.remove());
+                document.querySelectorAll('style').forEach(e=>e.remove());
                 let inject = decodeURIComponent(location.hash.slice(1))
                 let x = document.createElement('style');
                 console.log(inject);

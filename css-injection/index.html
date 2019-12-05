@@ -10,7 +10,7 @@
                 document.querySelectorAll('style').forEach(e=>e.remove());
                 let inject = decodeURIComponent(location.hash.slice(1))
                 let x = document.createElement('style');
-                console.log(inject);
+                // console.log(inject);
                 x.innerText = inject;
                 document.head.appendChild(x);
                 injection.value = inject;
